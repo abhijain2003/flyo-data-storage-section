@@ -237,3 +237,135 @@ body  {
 
 
 
+
+
+.processing::after  {
+    content: "";
+    display: block;
+    background-color: #fff;
+    border-radius: 100%;
+    width: 14px;
+    height: 14px;
+    margin: 2px  5px  0  0;
+}
+
+.end-points  {
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* value-left */
+
+.gb  {
+    color: #fff;
+}
+
+.num-value  {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.amount-left  {
+    font-size: 14px;
+    color: hsl(229, 7%, 55%);
+}
+
+.left-value  {
+    background-color: #FFF;
+    padding: 14px;
+    border-radius: 8px  8px  0  8px;
+    position: absolute;
+    transform: translateY(-190px);
+    right: 130px;
+    display: flex;
+}
+
+.left-value::after {
+    content: '';
+    position: absolute;
+    border-top: 10px  solid  #fff;
+    border-bottom: 10px  solid  transparent;
+    border-left: 10px  solid  transparent;
+    border-right: 10px  solid  #fff;
+    width: 0; 
+    height: 0;
+    top: 75px;
+    right: 0px;
+  }
+
+  .attribution  {
+      transform: translateY(-100px);
+      left: 400px;
+      color: #fff;
+      position: absolute;
+  }
+
+  .attribution a {
+      text-decoration: none;
+      color: pink;
+  }
+
+  @media screen and (max-width: 425px)  {
+      body  {
+          background-image: url(images/bg-mobile.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+      }
+
+      .attribution  {
+          position: absolute;
+          transform: translateY(-50px);
+          left: 5px;
+      }
+
+      .container  {
+          flex-direction: column;
+          min-height: 100vh;
+      }
+
+      .company  {
+          position: absolute;
+          transform: translateX(5px);
+          top: 150px;
+        }
+
+      .data-progress  {
+          width: 211px;
+          height: 60px;
+          position: absolute;
+          top: 360px;
+          transform: translateX(-10px);
+      }
+
+      .left-value  {
+        background-color: #FFF;
+        padding: 14px;
+        border-radius: 8px  8px  8px  8px;
+        position: absolute;
+        transform: translateX(5px);
+        top: 500px;
+        display: flex;
+      }
+
+      .left-value::after  {
+          content: none;
+      }
+
+      .data-process  {
+          width: 270px;
+          position: absolute;
+          right: 5px;
+      }
+
+      .processing  {
+          width: 200px;
+      }
+  }
+
+
+
+
