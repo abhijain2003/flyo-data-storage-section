@@ -1,0 +1,239 @@
+*  {
+    margin: 0;
+    padding: 0;
+}
+
+body  {
+    font-family: 'Raleway', sans-serif;
+    background-color: hsl(229, 57%, 11%);
+    background-image: url(images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    max-width: 1440px;
+    min-height: 100vh;
+}
+
+.container  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* company-section */
+
+.company  {
+    background-color: hsl(228, 56%, 26%);
+    padding: 40px  100px  40px  30px;
+    border-radius: 8px  80px  8px  8px;
+    position: absolute;
+    transform: translateX(-200px);
+    top: 120px;
+}
+
+.brand  {
+    width: 80%;
+    position: relative;
+    left: -10px;
+    top: -15px;
+}
+
+.func  {
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 5px;
+    position: relative;
+    top: 20px;
+    margin: 0  5px;
+    width: 350px;
+    position: relative;
+    left: -10px;
+}
+
+.func:hover  {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.func1  {
+    padding: 10px  10px;
+    width: 12%;
+}
+
+.func2  {
+    padding: 12px  10px;
+    width: 14%;
+}
+
+.func3  {
+    padding: 14px  10px;
+    width: 14%;
+}
+
+/* data-section */
+
+.data-progress  {
+    background-color: hsl(228, 56%, 26%);
+    padding: 50px  60px  50px  25px;
+    margin-left: 25px;
+    border-radius: 8px;
+    position: absolute;
+    transform: translateX(300px);
+    top: 140px;
+}
+
+.info  {
+    font-size: 14px;
+    color: hsl(243, 100%, 93%);
+    font-weight: 400;
+    opacity: 80%;
+    position: relative;
+    top: -18px;
+}
+
+.data-process {
+    width: 440px;
+    height: 20px;
+    background-color: hsl(229, 57%, 11%);
+    padding: 4px;
+    border-radius: 25px;
+}
+
+.processing  {
+    width: 320px;
+    height: 20px;
+    background-image: linear-gradient(to left,hsl(335, 100%, 65%),hsl(6, 100%, 80%));
+    border-radius: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.processing::after  {
+    content: "";
+    display: block;
+    background-color: #fff;
+    border-radius: 100%;
+    width: 14px;
+    height: 14px;
+    margin: 2px  5px  0  0;
+}
+
+.end-points  {
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* value-left */
+
+.gb  {
+    color: #fff;
+}
+
+.num-value  {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.amount-left  {
+    font-size: 14px;
+    color: hsl(229, 7%, 55%);
+}
+
+.left-value  {
+    background-color: #FFF;
+    padding: 14px;
+    border-radius: 8px  8px  0  8px;
+    position: absolute;
+    transform: translateY(-190px);
+    right: 130px;
+    display: flex;
+}
+
+.left-value::after {
+    content: '';
+    position: absolute;
+    border-top: 10px  solid  #fff;
+    border-bottom: 10px  solid  transparent;
+    border-left: 10px  solid  transparent;
+    border-right: 10px  solid  #fff;
+    width: 0; 
+    height: 0;
+    top: 75px;
+    right: 0px;
+  }
+
+  .attribution  {
+      transform: translateY(-100px);
+      left: 400px;
+      color: #fff;
+      position: absolute;
+  }
+
+  .attribution a {
+      text-decoration: none;
+      color: pink;
+  }
+
+  @media screen and (max-width: 425px)  {
+      body  {
+          background-image: url(images/bg-mobile.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+      }
+
+      .attribution  {
+          position: absolute;
+          transform: translateY(-50px);
+          left: 5px;
+      }
+
+      .container  {
+          flex-direction: column;
+          min-height: 100vh;
+      }
+
+      .company  {
+          position: absolute;
+          transform: translateX(5px);
+          top: 150px;
+        }
+
+      .data-progress  {
+          width: 211px;
+          height: 60px;
+          position: absolute;
+          top: 360px;
+          transform: translateX(-10px);
+      }
+
+      .left-value  {
+        background-color: #FFF;
+        padding: 14px;
+        border-radius: 8px  8px  8px  8px;
+        position: absolute;
+        transform: translateX(5px);
+        top: 500px;
+        display: flex;
+      }
+
+      .left-value::after  {
+          content: none;
+      }
+
+      .data-process  {
+          width: 270px;
+          position: absolute;
+          right: 5px;
+      }
+
+      .processing  {
+          width: 200px;
+      }
+  }
+
+
+
+
